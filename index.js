@@ -1,3 +1,5 @@
+// 消除异步传染性
+// 重点是通过抛错来进行多次请求达到同步效果
 const syncPromise = (func) => {
   let cache = []
   let i = 0
